@@ -1,0 +1,72 @@
+/* Las adaptamos al modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --negro: #d32424;
+    --blanco: #2e3044;
+    --sombra-ppal: #242424;
+    --sombra-sec: #3c3c3c;
+    --borde-negro: #FFFFFF50;
+  }
+}
+/* Configuramos si un usuario ha activado el modo alto contraste. (BETA) */
+
+
+.acordeon {
+    
+  width: 100%;
+  max-width: 120rem;
+  padding: 2rem;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1rem;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.acordeon .bloque {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1rem;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+}
+
+.acordeon .h2 {
+  margin: 0 0 1rem;
+  padding: 1rem;
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1rem;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+          box-shadow: 0.4rem 0.4rem 0.8rem var(--sombra-ppal), -0.4rem -0.4rem 0.8rem var(--sombra-sec), inset 0 0 0 transparent, inset 0 0 0 transparent;
+  cursor: pointer;
+}
+.acordeon .h2:hover {
+  color: var(--negro);
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+  border-radius: 1rem;
+  background-color: var(--blanco);
+  -webkit-box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+          box-shadow: 0 0 0 transparent, 0 0 0 transparent, inset 0.4rem 0.4rem 0.8rem var(--sombra-ppal), inset -0.4rem -0.4rem 0.8rem var(--sombra-sec);
+}
+
+.acordeon .contenido {
+  height: 0;
+  padding: 0rem;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.acordeon .bloque.activo .contenido {
+  height: 11rem;
+}

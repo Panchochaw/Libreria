@@ -1,0 +1,1106 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		 
+
+		<title>Libreria Multiservicios</title>
+
+	
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700" rel="stylesheet">
+
+	
+		<link type="text/css" rel="stylesheet" href="css/bootstrap.min.css"/>
+		
+		
+	
+		<link type="text/css" rel="stylesheet" href="css/slick.css"/>
+		<link type="text/css" rel="stylesheet" href="css/slick-theme.css"/>
+		<link rel="stylesheet" href="css/nuevo.css">
+		<script defer src="css/nuevo.js" ></script>
+		
+
+		<link type="text/css" rel="stylesheet" href="css/nouislider.min.css"/>
+
+		<link rel="stylesheet" href="css/nuevo.scss">
+
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+		<link type="text/css" rel="stylesheet" href="css/style.css"/>
+		
+
+			<!-- firebase -->
+						<!-- The core Firebase JS SDK is always required and must be listed first -->
+			<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+
+			<!-- TODO: Add SDKs for Firebase products that you want to use
+				https://firebase.google.com/docs/web/setup#available-libraries -->
+			<script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-analytics.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/7.14.2/firebase-auth.js"></script>
+			<script>
+			// Your web app's Firebase configuration
+			// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+			var firebaseConfig = {
+				apiKey: "AIzaSyABNpDgEElcPaoAac7kWQCmmvOXlMkQnQU",
+				authDomain: "programacion-738e6.firebaseapp.com",
+				projectId: "programacion-738e6",
+				storageBucket: "programacion-738e6.appspot.com",
+				messagingSenderId: "171377905116",
+				appId: "1:171377905116:web:85c0f83c5618c6f2cf1319",
+				measurementId: "G-3SC9PFG54H"
+			};
+			// Initialize Firebase
+			firebase.initializeApp(firebaseConfig);
+			firebase.analytics();
+			</script>
+
+    </head>
+
+	<body>
+		
+		  
+	
+
+		<header>
+		<!-- informacion -->
+			<div id="top-header">
+				<div class="container">
+					<ul class="header-links pull-left">
+						<li><a href="https://wa.me/51912505295?text=Hola,%20mas%20informacion%20sobre%20el%20producto"><i class="fa fa-phone"></i> +51 999 999 999</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> libreriaMarita@email.com</a></li>
+						<li><a href="https://goo.gl/maps/bd9iawMMCxmDvV4i8"><i class="fa fa-map-marker"></i> via de evitamiento S.N</a></li>
+					</ul>
+					<ul class="header-links pull-right">
+						<li><a href="#"><i class=""></i> S/.</a></li>
+						<li><a href="#"><i class="fa fa-user-o"></i> Usuario</a></li>
+					</ul>
+				</div>
+			</div>
+	
+
+		<!--logo -->
+			<div id="header">
+		
+				<div class="container">
+		
+					<div class="row">
+			
+						<div class="col-md-3">
+							<div class="header-logo">
+								<a href="index.html" class="logo">
+									<img src="img/logo.png"  width="200" height="100" alt="">
+								</a>
+							</div>
+						</div>
+			
+<!--navegacion -->
+
+						<div class="col-md-6">
+							<div class="header-search">
+								<form>
+									
+									<input class="input" placeholder="Buscar producto">
+									<button class="search-btn">Buscar</button>
+								</form>
+							</div>
+						</div>
+				
+
+<!--carrito -->
+						<div class="col-md-3 clearfix">
+							<div class="header-ctn">
+			
+								<div>
+									<a href="#">
+										<i class="fa fa-heart-o"></i>
+										<span>Favoritos</span>
+										<div class="qty">2</div>
+									</a>
+								</div>
+			
+			
+								<div class="dropdown">
+									<a class="dropdown-toggle" data-toggle="dropdown" aria-expanded="true">
+										<i class="fa fa-shopping-cart"></i>
+										<span>Carrito</span>
+										<div class="qty">3</div>
+									</a>
+									<div class="cart-dropdown">
+										<div class="cart-list">
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product01.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Mega Pack cuadernos Stanford</a></h3>
+													<h4 class="product-price"><span class="qty">1x</span>S/150.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+
+											<div class="product-widget">
+												<div class="product-img">
+													<img src="./img/product02.png" alt="">
+												</div>
+												<div class="product-body">
+													<h3 class="product-name"><a href="#">Pack Lapiceros </a></h3>
+													<h4 class="product-price"><span class="qty">3x</span>S/80.00</h4>
+												</div>
+												<button class="delete"><i class="fa fa-close"></i></button>
+											</div>
+										</div>
+										<div class="cart-summary">
+											<small>2 Objetos Selecionados</small>
+											<h5>SUBTOTAL: S/230.00</h5>
+										</div>
+										<div class="cart-btns">
+											<a href="#">Seguir Viendo</a>
+											<a href="#">Comprar  <i class="fa fa-arrow-circle-right"></i></a>
+										</div>
+									</div>
+								</div>
+
+
+		
+								<div class="menu-toggle">
+									<a href="#">
+										<i class="fa fa-bars"></i>
+										<span>Menu</span>
+									</a>
+								</div>
+				
+							</div>
+						</div>
+			
+					</div>
+		
+				</div>
+	
+			</div>
+
+		</header>
+
+
+<!-- navegasion -->
+		<nav id="navigation">
+
+			<div class="container">
+
+				<div id="responsive-nav">
+
+					<ul class="main-nav nav navbar-nav">
+						<li class="active"><a href="index.html">Inicio</a></li>
+						<li><a href="#">Ofertas</a></li>
+						<li><a href="#">Categoria</a></li>
+						<li><a href="#">Cuadernos</a></li>
+						<li><a href="#">Lapiceros</a></li>
+						<li><a href="#">Acesorios</a></li>
+						<li><a href="#">Regalos</a></li>
+					</ul>
+
+				</div>
+
+			</div>
+
+		</nav>
+
+<!-- tarjetas de oferta -->
+
+		<div class="section">
+		
+			<div class="container">
+	
+				<div class="row">
+			
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/Cuadernos.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Cuadernos<br>Oferta</h3>
+								<a href="#" class="cta-btn">Ver mas ... <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/lapicero.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Lapiceros<br>Oferta</h3>
+								<a href="#" class="cta-btn">Ver mas ... <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-md-4 col-xs-6">
+						<div class="shop">
+							<div class="shop-img">
+								<img src="./img/regalos.jpg" alt="">
+							</div>
+							<div class="shop-body">
+								<h3>Regalos<br>Oferta</h3>
+								<a href="#" class="cta-btn">Ver mas ... <i class="fa fa-arrow-circle-right"></i></a>
+							</div>
+						</div>
+					</div>
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+<!-- promosion reloj -->
+		
+		<div id="hot-deal" class="section">
+		
+			<div class="container">
+			
+				<div class="row">
+					<div class="col-md-12">
+						<div class="hot-deal">
+							<ul class="hot-deal-countdown">
+								<li>
+									<div>
+										<h3>02</h3>
+										<span>Dias</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>10</h3>
+										<span>Horas</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>24</h3>
+										<span>Min</span>
+									</div>
+								</li>
+								<li>
+									<div>
+										<h3>60</h3>
+										<span>Se</span>
+									</div>
+								</li>
+							</ul>
+							<h2 id="locura" class="text-uppercase">Dias de Locura </h2>
+							<p id="locura">Rebaja Sobre Rebaja 50% Descuemto</p>
+							<a class="primary-btn cta-btn" href="store.html">Ver mas...</a>
+						</div>
+					</div>
+				</div>
+	
+			</div>
+		
+		</div>
+	
+
+	
+		<div class="section">
+		
+			<div class="container">
+				
+				<div class="row">
+
+					
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">Nuevos Productos</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab1">Cuadernos</a></li>
+									<li><a data-toggle="tab" href="#tab1">Lapiceros</a></li>
+									<li><a data-toggle="tab" href="#tab1">Accesorios</a></li>
+									<li><a data-toggle="tab" href="#tab1">Regalos</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+
+					
+					<!-- prodcutos -->
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+							
+								<div id="tab1" class="tab-pane active">
+									<div class="products-slick" data-nav="#slick-nav-1">
+										<!-- producto 1 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/cuader.jpg" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+													<span class="new">Nuevo</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Ciuadernos</p>
+												<h3  class="product-name"><a href="#" id="cua">Cuadernos Stanford por docena</a></h3>
+												<h4 class="product-price">S/120 <del class="product-old-price">S/200</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</button>
+											</div>
+										</div>
+										
+
+										<!-- producto 2 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/lapi.jpg" alt="">
+												<div class="product-label">
+													<span class="new">Nuevo</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Lapiceros</p>
+												<h3 class="product-name"><a id="cua" href="#">Lapiceros FaberCastell Mega Pack</a></h3>
+												<h4 class="product-price">S/18.00 <del class="product-old-price">S/25.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+											</div>
+										</div>
+										
+
+										<!-- producto 3 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/cuader2.png" alt="">
+												<div class="product-label">
+													<span class="sale">-30%</span>
+												</div>
+											</div>
+											<div class="product-body">
+												<p class="product-category">Cuadernos</p>
+												<h3 class="product-name"><a id="cua" href="#">Cuaderno Stanford por Unidad</a></h3>
+												<h4 class="product-price">S/8.00 <del class="product-old-price">S/10.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+											</div>
+										</div>
+										
+
+										<!-- producto 4 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/regalo.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Regalos</p>
+												<h3 class="product-name"><a id="cua" href="#">Lista de Regalos a mitad de precio </a></h3>
+												<h4 class="product-price">S/50.00 <del class="product-old-price">S/100.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocualtar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+											</div>
+										</div>
+										
+
+										<!-- producto 5 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/utiles.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Utiles Escolares</p>
+												<h3 class="product-name"><a id="cua" href="#">Lista de Utiles Escolares en Oferta</a></h3>
+												<h4 class="product-price">S/250.00 <del class="product-old-price">S/280.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+					
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i> Agregar al Carrito</button>
+											</div>
+										</div>
+										<!-- /producto -->
+									</div>
+									<div id="slick-nav-1" class="products-slick-nav"></div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+
+		
+
+	
+		<div class="section">
+		
+			<div class="container">
+			
+				<div class="row">
+
+					<!-- mas productos-->
+					<div class="col-md-12">
+						<div class="section-title">
+							<h3 class="title">MAs Productos</h3>
+							<div class="section-nav">
+								<ul class="section-tab-nav tab-nav">
+									<li class="active"><a data-toggle="tab" href="#tab2">Cuadernos</a></li>
+									<li><a data-toggle="tab" href="#tab2">Lapiceros</a></li>
+									<li><a data-toggle="tab" href="#tab2">Accesorios</a></li>
+									<li><a data-toggle="tab" href="#tab2">Regalos</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				
+
+			
+					<div class="col-md-12">
+						<div class="row">
+							<div class="products-tabs">
+						
+								<div id="tab2" class="tab-pane fade in active">
+									<div class="products-slick" data-nav="#slick-nav-2">
+										<!-- producto 1 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/lapi2.jpg" alt="">
+												
+											</div>
+											<div class="product-body">
+												<p class="product-category">lapiceros</p>
+												<h3 class="product-name"><a id="cua" href="#">Lapiceros en oferta Limitado</a></h3>
+												<h4 class="product-price">S/15.00 <del class="product-old-price">S/25.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+											
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</button>
+											</div>
+										</div>
+	
+
+										<!-- producto 2 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/Cuader.jpg" alt="">
+												
+											</div>
+											<div class="product-body">
+												<p class="product-category">Cuadernos</p>
+												<h3 class="product-name"><a id="cua" href="#">Cuadernos Stanford Mega Pack</a></h3>
+												<h4 class="product-price">S/100.00 <del class="product-old-price">S/120.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star-o"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocuultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Atgregar al Carrito</button>
+											</div>
+										</div>
+
+
+										<!-- producto 3 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/lapi2.jpg" alt="">
+												
+											</div>
+											<div class="product-body">
+												<p class="product-category">Lapicero</p>
+												<h3 class="product-name"><a id="cua" href="#">Lapiceros Oferta Oferta XD</a></h3>
+												<h4 class="product-price">S/9.00 <del class="product-old-price">S/10.00</del></h4>
+												<div class="product-rating">
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gustat</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</button>
+											</div>
+										</div>
+						
+
+										<!-- producto 4 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/regalo.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Regalos</p>
+												<h3 class="product-name"><a id="cua" href="#">Date un Gustito con los Regalos</a></h3>
+												<h4 class="product-price">S/25.00 <del class="product-old-price">S/30.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</button>
+											</div>
+										</div>
+					
+
+										<!-- producto 5 -->
+										<div class="product">
+											<div class="product-img">
+												<img src="./img/utiles.jpg" alt="">
+											</div>
+											<div class="product-body">
+												<p class="product-category">Utiles</p>
+												<h3 class="product-name"><a id="cua" href="#">Todos los Utiles Para tus Hijos</a></h3>
+												<h4 class="product-price">S/100.00 <del class="product-old-price">S/150.00</del></h4>
+												<div class="product-rating">
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+													<i class="fa fa-star"></i>
+												</div>
+												<div class="product-btns">
+													<button class="add-to-wishlist"><i class="fa fa-heart-o"></i><span class="tooltipp">Me Gusta</span></button>
+													
+													<button class="quick-view"><i class="fa fa-eye"></i><span class="tooltipp">Ocultar</span></button>
+												</div>
+											</div>
+											<div class="add-to-cart">
+												<button class="add-to-cart-btn"><i class="fa fa-shopping-cart"></i>Agregar al Carrito</button>
+											</div>
+										</div>
+										<!-- /producto -->
+									</div>
+									<div id="slick-nav-2" class="products-slick-nav"></div>
+								</div>
+					
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			
+			</div>
+		
+		</div>
+		
+
+
+		<div class="section">
+
+			<div class="container">
+		
+				<div class="row">
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 id="uwu" class="title">Cuadernos</h4>
+							<div class="section-nav">
+								<div id="slick-nav-3" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-3">
+							<div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/cuader2.png" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/50.00 </h4>
+									</div>
+								</div>
+								
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/cuader.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/60.00 </h4>
+									</div>
+								</div>
+								
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/Cuadernos.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/30.00 </h4>
+									</div>
+								</div>
+							
+							</div>
+
+							<div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/cuader4.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/80.00 </h4>
+									</div>
+								</div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/cuader5.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/50.00 </h4>
+									</div>
+								</div>
+								
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/cuader.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Cuadernos</p>
+										<h3 class="product-name"><a id="cua" href="#">Pack de Cuadernos </a></h3>
+										<h4 class="product-price">S/30.00 </h4>
+									</div>
+								</div>
+							
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 id="uwu" class="title">Lapiceros</h4>
+							<div class="section-nav">
+								<div id="slick-nav-4" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-4">
+							<div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapi.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapi2.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapi3.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+							</div>
+
+							<div>
+					
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapi4.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapi5.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/lapicero.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Lapicero</p>
+										<h3 class="product-name"><a id="cua" href="#">Ofertas en Lapiceros</a></h3>
+										<h4 class="product-price">S/20.00 </h4>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+
+					<div class="clearfix visible-sm visible-xs"></div>
+
+					<div class="col-md-4 col-xs-6">
+						<div class="section-title">
+							<h4 id="uwu" class="title">Regalos</h4>
+							<div class="section-nav">
+								<div id="slick-nav-5" class="products-slick-nav"></div>
+							</div>
+						</div>
+
+						<div class="products-widget-slick" data-nav="#slick-nav-5">
+							<div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalo.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalo2.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+							
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalo3.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+						
+							</div>
+
+							<div>
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalo4.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+								
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalo5.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+							
+						
+								<div class="product-widget">
+									<div class="product-img">
+										<img src="./img/regalos.jpg" alt="">
+									</div>
+									<div class="product-body">
+										<p class="product-category">Regalo</p>
+										<h3 class="product-name"><a id="cua" href="#">Regalitos uwu</a></h3>
+										<h4 class="product-price">S/150.00 </h4>
+									</div>
+								</div>
+						
+							</div>
+						</div>
+					</div>
+
+				</div>
+			
+			</div>
+		
+		</div>
+	
+		<!-- acordion de informacion xd -->
+		
+		<center>
+			<div class="acordeon">
+				<div class="bloque activo">
+					<h2 class="h2">libreria Marita</h2>
+					<div class="contenido">Libreria Marita, ofrecemos productos de calidad al mejor precio al por mayor y menor, envios a nivel local y delibery a todas las regiones del cusco 
+						, nos pueden ubicar en:<li><a href="https://goo.gl/maps/bd9iawMMCxmDvV4i8"><i class="fa fa-map-marker"></i> via de evitamiento S.N</a></li> 
+					</div>
+				</div>
+				<div class="bloque">
+					<h2 class="h2">Contactenos</h2>
+					<div class="contenido">Para mas informacion, realizar pedidos, consultas del delibery, contactenos a los siguientes enlaces:
+						<li><a href="https://wa.me/51912505295?text=Hola,%20mas%20informacion%20sobre%20el%20producto"><i class="fa fa-phone"></i>Whatssap +51 999 999 999</a></li>
+						<li><a href="#"><i class="fa fa-envelope-o"></i> libreriaMarita@email.com</a></li> </div>
+				</div>
+				<div class="bloque">
+					<h2 class="h2">Politicas de Privacidad</h2>
+					<div class="contenido">POLÍTICA DE PRIVACIDAD
+
+						<p>El presente Política de Privacidad establece los términos en que libreira usa y protege la información que es proporcionada por sus usuarios al momento de utilizar su sitio web.
+							nformación que es recogida</p>
+
+						<p>Nuestro sitio web podrá recoger información personal por ejemplo: Nombre,  información de contacto como  su dirección de correo electrónica e información demográfica.</p>
+					</div>
+				</div>
+				
+			</div>
+		</center>
+	   
+		
+		
+		  <!-- rgistro de usuario xd -->
+			<!-- Modal -->
+			<center>
+				<form class="reg" action="index.html" method="post">
+					<h1>registro</h1>
+					<label for="floatingInput">Ingrese su correo</label>
+					<input type="email" name="" id="email" placeholder="nombre@ejemplo.com">
+
+					<label for="floatingPassword">ingresar contraseña</label>
+					<input type="password" name="" id="contrasena" placeholder="contraseña">
+					
+					
+				    <button onclick="registrar()" type="button" class="btn btn-primary">Enviar</button>
+				</form>
+			</center>
+
+
+		<footer id="footer">
+	
+			<div class="section">
+			<!--informacion de la empresa-->
+				<div class="container">
+	
+					<div class="row">
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">La Empresa</h3>
+								<p>Libreria Marita ofrece una variedad de productos escolares a un exelente precio, aproveche las ofertas que tenemos para usted.</p>
+								<ul class="footer-links">
+									<li><a href="#"><i class="fa fa-map-marker"></i>Av. la cultura S.N</a></li>
+									<li><a href="#"><i class="fa fa-phone"></i>+51 999 999 999</a></li>
+									<li><a href="#"><i class="fa fa-envelope-o"></i>libreriaMarita@email.com</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Categorias</h3>
+								<ul class="footer-links">
+									<li><a href="#">Dias de Oferta</a></li>
+									<li><a href="#">Cuadernos</a></li>
+									<li><a href="#">Lapiceros</a></li>
+									<li><a href="#">Accesorios</a></li>
+									<li><a href="#">Regalos</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="clearfix visible-xs"></div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Informacion</h3>
+								<ul class="footer-links">
+									
+									<li><a href="#">Contactenos</a></li>
+									<li><a href="#">Politica de Privasidad</a></li>
+									<li><a href="#">Ordenes </a></li>
+									<li><a href="#">Terminos y Condiciones</a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-3 col-xs-6">
+							<div class="footer">
+								<h3 class="footer-title">Servicios</h3>
+								<ul class="footer-links">
+									
+									<li><a href="#">Ver Carrito</a></li>
+									<li><a href="#">Mi Lista</a></li>
+									<li><a href="#">Ver Pedidos</a></li>
+									<li><a href="#">Ayuda</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+			
+				</div>
+			
+			</div>
+		
+
+			<div id="bottom-footer" class="section">
+				<div class="container">
+					<!-- pie de pagina -->
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<ul class="footer-payments">
+								<li><a href="#"><i class="fa fa-cc-visa"></i></a></li>
+								<li><a href="#"><i class="fa fa-credit-card"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-paypal"></i></a></li>
+								<li><a href="#"><i class="fa fa-cc-mastercard"></i></a></li>
+								
+							</ul>
+							<span class="copyright">
+								
+								Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos los Derechos Reservados | Libreria Marita <i class="fa fa-heart-o" aria-hidden="true"></i>  <a href="https://colorlib.com" target="_blank"></a>
+							
+							</span>
+						</div>
+					</div>
+						
+				</div>
+			
+			</div>
+			
+		</footer>
+		
+
+		<script src="css/moda.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/slick.min.js"></script>
+		<script src="js/nouislider.min.js"></script>
+		<script src="js/jquery.zoom.min.js"></script>
+		<script src="js/main.js"></script>
+
+	</body>
+</html>
